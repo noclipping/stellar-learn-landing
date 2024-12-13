@@ -11,7 +11,6 @@ export default function Home() {
         />
         <link rel="icon" href="/stellar-learn-favicon.png" />
       </Head>
-      {/* Ensure the entire page is gray */}
       <div className="bg-gray-100 min-h-screen">
         <main className="px-6 py-12">
           {/* Headline Section */}
@@ -20,12 +19,16 @@ export default function Home() {
               Revolutionize Learning with Stellar Learn
             </h1>
             <button
-              className="bg-black text-white px-6 py-3 rounded-lg transition"
-              disabled
+              className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition mb-4"
             >
               Coming Soon (Join Waiting List)
             </button>
-
+            <br />
+            <button
+              className="bg-indigo-700 text-white px-6 py-3 rounded-lg hover:bg-indigo-800 transition"
+            >
+              Request a Demo
+            </button>
           </section>
 
           {/* Screenshot Section */}

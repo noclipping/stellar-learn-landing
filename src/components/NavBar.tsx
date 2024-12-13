@@ -2,9 +2,8 @@ import Link from "next/link";
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white shadow-lg">
       <div className="flex items-center justify-between px-4 py-3">
-        {/* Logo */}
         <div className="flex-shrink-0">
           <Link href="/">
             <img
