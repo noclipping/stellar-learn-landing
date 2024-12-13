@@ -1,6 +1,10 @@
 import Head from "next/head";
+import { useState } from "react";
+import WaitlistModal from "@/components/WaitlistModal";
+
 
 export default function Home() {
+  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
   return (
     <>
       <Head>
@@ -24,6 +28,7 @@ export default function Home() {
             <div className="flex justify-center space-x-4">
               <button
                 className="bg-black text-white px-6 py-4 rounded-lg hover:bg-gray-800 transition w-56"
+                onClick={() => setIsWaitlistOpen(true)}
               >
                 Join Waiting List
               </button>
@@ -33,6 +38,10 @@ export default function Home() {
                 Request a Demo
               </button>
             </div>
+            <WaitlistModal
+              isOpen={isWaitlistOpen}
+              onClose={() => setIsWaitlistOpen(false)}
+            />
 
           </section>
 
