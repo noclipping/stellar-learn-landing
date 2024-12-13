@@ -42,9 +42,9 @@ export default function Home() {
 
           {/* Placeholder for Future Content */}
           <section className="text-center">
-            <p className="text-gray-600 text-lg">
-              More exciting features and updates are coming soon. Stay tuned!
-            </p>
+            <h1 className="text-2xl font-bold text-gray-800 mb-6">
+              More exciting features and updates are coming soon. 🚀 Stay tuned!
+            </h1>
           </section>
         </main>
       </div>
