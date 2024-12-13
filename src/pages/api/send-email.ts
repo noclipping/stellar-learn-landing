@@ -25,7 +25,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const mailOptions = {
       from: `"stellar-learn.com" <${process.env.EMAIL_USER}>`,
-      to: "WaitList@stellar-learn.com",
+      to: process.env.WAITLIST_EMAIL,
       subject: "✨ New Waitlist Signup ✨",
       text: `Hello Team,
     
