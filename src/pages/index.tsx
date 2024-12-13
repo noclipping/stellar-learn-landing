@@ -18,17 +18,22 @@ export default function Home() {
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
               Revolutionize Learning with Stellar Learn
             </h1>
-            <button
-              className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition mb-4"
-            >
-              Coming Soon (Join Waiting List)
-            </button>
-            <br />
-            <button
-              className="bg-indigo-700 text-white px-6 py-3 rounded-lg hover:bg-indigo-800 transition"
-            >
-              Request a Demo
-            </button>
+            <h1 className="text-4xl font-bold text-gray-800 mb-6">
+              Coming Soon
+            </h1>
+            <div className="flex justify-center space-x-4">
+              <button
+                className="bg-black text-white px-6 py-4 rounded-lg hover:bg-gray-800 transition w-56"
+              >
+                Join Waiting List
+              </button>
+              <button
+                className="bg-indigo-700 text-white px-6 py-4 rounded-lg hover:bg-indigo-800 transition w-56"
+              >
+                Request a Demo
+              </button>
+            </div>
+
           </section>
 
           {/* Screenshot Section */}
