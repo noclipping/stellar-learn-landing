@@ -32,11 +32,14 @@ export default function Home() {
               >
                 Join Waiting List
               </button>
-              <button
-                className="bg-indigo-700 text-white px-6 py-4 rounded-lg hover:bg-indigo-800 transition w-56"
+              <a
+                href="https://outlook.office365.com/owa/calendar/StellarLearnDemoRequest@nebulaacademy.org/bookings/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-indigo-700 text-white px-6 py-4 rounded-lg hover:bg-indigo-800 transition w-56 inline-flex items-center justify-center"
               >
                 Request a Demo
-              </button>
+              </a>
             </div>
             <WaitlistModal
               isOpen={isWaitlistOpen}
