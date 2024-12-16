@@ -23,7 +23,7 @@ export default function Home() {
               Revolutionize Learning with Stellar Learn
             </h1>
             <h1 className="text-4xl font-bold text-gray-800 mb-6">
-              Coming Soon
+              Coming Soon 🕒
             </h1>
             <div className="flex justify-center space-x-4">
               <button
@@ -45,16 +45,43 @@ export default function Home() {
               isOpen={isWaitlistOpen}
               onClose={() => setIsWaitlistOpen(false)}
             />
-
           </section>
 
           {/* Screenshot Section */}
-          <section className="mb-12">
-            <img
-              src="/assets/lms-screenshot.png"
-              alt="Stellar-Learn LMS Screenshot"
-              className="rounded-lg shadow-lg w-full max-w-3xl mx-auto"
-            />
+          <section className="mb-24 flex justify-center relative">
+            {/* Wrapper with Padding */}
+            <div className="relative flex items-center justify-center pt-16">
+              {/* First Image */}
+              <div className="relative hover:z-10 transition-all">
+                <img
+                  src="/assets/lms-admin-screenshot.png"
+                  alt="Stellar-Learn LMS Screenshot 1"
+                  className="rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
+                  draggable="false"
+                  style={{
+                    position: "relative",
+                    top: "50px",
+                    left: "50px",
+                    userSelect: "none",
+                  }}
+                />
+              </div>
+              {/* Second Image */}
+              <div className="relative hover:z-10 transition-all">
+                <img
+                  src="/assets/lms-screenshot.png"
+                  alt="Stellar-Learn LMS Screenshot 2"
+                  className="rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
+                  draggable="false"
+                  style={{
+                    position: "relative",
+                    top: "-50px",
+                    left: "-50px",
+                    userSelect: "none",
+                  }}
+                />
+              </div>
+            </div>
           </section>
 
           {/* Placeholder for Future Content */}
