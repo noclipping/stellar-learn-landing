@@ -18,7 +18,6 @@ const Footer: React.FC = () => {
 
         {/* Social Icons */}
         <div className="flex space-x-6">
-          {/* Instagram */}
           <a
             href="https://www.instagram.com/nebulaacademy_ny/"
             target="_blank"
@@ -28,8 +27,6 @@ const Footer: React.FC = () => {
           >
             <FaInstagram size={24} />
           </a>
-
-          {/* Facebook */}
           <a
             href="https://www.facebook.com/NebulaAcademyNY/"
             target="_blank"
@@ -39,8 +36,6 @@ const Footer: React.FC = () => {
           >
             <FaFacebook size={24} />
           </a>
-
-          {/* YouTube */}
           <a
             href="https://www.youtube.com/channel/UC_6eltwYGkPKsam_s9V6Yhg"
             target="_blank"
@@ -50,8 +45,6 @@ const Footer: React.FC = () => {
           >
             <FaYoutube size={24} />
           </a>
-
-          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/company/nebulaacademy/"
             target="_blank"
