@@ -17,13 +17,12 @@ export default function Home() {
       </Head>
       <div className="bg-gray-100 min-h-screen">
         <main className="px-6 py-12">
-          {/* Headline Section */}
           <section className="text-center mb-12">
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
               Revolutionize Learning with Stellar Learn
             </h1>
             <h1 className="text-4xl font-bold text-gray-800 mb-6">
-              Coming Soon
+              Coming Soon 🕒
             </h1>
             <div className="flex justify-center space-x-4">
               <button
@@ -45,19 +44,41 @@ export default function Home() {
               isOpen={isWaitlistOpen}
               onClose={() => setIsWaitlistOpen(false)}
             />
-
           </section>
 
-          {/* Screenshot Section */}
-          <section className="mb-12">
-            <img
-              src="/assets/lms-screenshot.png"
-              alt="Stellar-Learn LMS Screenshot"
-              className="rounded-lg shadow-lg w-full max-w-3xl mx-auto"
-            />
+          <section className="mb-24 flex justify-center relative">
+            <div className="relative flex items-center justify-center py-16">
+              <div className="relative hover:z-10 transition-all">
+                <img
+                  src="/assets/lms-admin-screenshot.png"
+                  alt="Stellar-Learn LMS Screenshot 1"
+                  className="rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
+                  draggable="false"
+                  style={{
+                    position: "relative",
+                    top: "50px",
+                    left: "50px",
+                    userSelect: "none",
+                  }}
+                />
+              </div>
+              <div className="relative hover:z-10 transition-all">
+                <img
+                  src="/assets/lms-screenshot.png"
+                  alt="Stellar-Learn LMS Screenshot 2"
+                  className="rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
+                  draggable="false"
+                  style={{
+                    position: "relative",
+                    top: "-50px",
+                    left: "-50px",
+                    userSelect: "none",
+                  }}
+                />
+              </div>
+            </div>
           </section>
 
-          {/* Placeholder for Future Content */}
           <section className="text-center">
             <h1 className="text-2xl font-bold text-gray-800 mb-6">
               More exciting features and updates are coming soon. 🚀 Stay tuned!
