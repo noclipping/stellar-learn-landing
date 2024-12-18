@@ -17,7 +17,6 @@ export default function Home() {
       </Head>
       <div className="bg-gray-100 min-h-screen">
         <main className="px-6 py-12">
-          {/* Headline Section */}
           <section className="text-center mb-12">
             <h1 className="text-5xl font-bold text-gray-800 mb-6">
               Revolutionize Learning with Stellar Learn
@@ -47,11 +46,8 @@ export default function Home() {
             />
           </section>
 
-          {/* Screenshot Section */}
           <section className="mb-24 flex justify-center relative">
-            {/* Wrapper with Padding */}
-            <div className="relative flex items-center justify-center pt-16">
-              {/* First Image */}
+            <div className="relative flex items-center justify-center py-16">
               <div className="relative hover:z-10 transition-all">
                 <img
                   src="/assets/lms-admin-screenshot.png"
@@ -66,7 +62,6 @@ export default function Home() {
                   }}
                 />
               </div>
-              {/* Second Image */}
               <div className="relative hover:z-10 transition-all">
                 <img
                   src="/assets/lms-screenshot.png"
@@ -84,7 +79,6 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Placeholder for Future Content */}
           <section className="text-center">
             <h1 className="text-2xl font-bold text-gray-800 mb-6">
               More exciting features and updates are coming soon. 🚀 Stay tuned!
