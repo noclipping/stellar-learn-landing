@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { useState } from "react";
 import WaitlistModal from "@/components/WaitlistModal";
 
@@ -7,14 +6,6 @@ export default function Home() {
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
   return (
     <>
-      <Head>
-        <title>Stellar Learn LMS</title>
-        <meta
-          name="description"
-          content="Revolutionize your learning experience with Stellar-Learn. Join our waiting list today!"
-        />
-        <link rel="icon" href="/stellar-learn-favicon.png" />
-      </Head>
       <div className="bg-gray-100 min-h-screen">
         <main className="px-6 py-12">
           <section className="text-center mb-12">
