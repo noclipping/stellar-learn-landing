@@ -41,7 +41,7 @@ export default function Home() {
             <div className="relative flex items-center justify-center py-16">
               <div className="relative hover:z-10 transition-all">
                 <img
-                  src="/assets/figma-admin-dashboard.png"
+                  src="/assets/admin-dashboard.png"
                   alt="Stellar-Learn LMS Screenshot 1"
                   className="rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
                   draggable="false"
@@ -55,7 +55,7 @@ export default function Home() {
               </div>
               <div className="relative hover:z-10 transition-all">
                 <img
-                  src="/assets/figma-user-dashboard.png"
+                  src="/assets/user-dashboard.png"
                   alt="Stellar-Learn LMS Screenshot 2"
                   className="rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
                   draggable="false"
