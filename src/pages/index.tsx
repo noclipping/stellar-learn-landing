@@ -91,8 +91,8 @@ export default function Home() {
                   The Future of Learning, Powered by AI
                 </h3>
                 <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                  Stellar-Learn isn't just another Learning Management
-                  System—it's a{" "}
+                  Stellar-Learn isn&apos;t just another Learning Management
+                  System—it&apos;s a{" "}
                   <span className="font-bold text-gray-800">
                     next-generation, AI-enhanced platform
                   </span>{" "}
@@ -153,7 +153,8 @@ export default function Home() {
                     </h4>
                     <p className="text-gray-600 text-sm leading-relaxed">
                       Scalable, secure, and built for institutions, enterprises,
-                      and training partners who want more than "just an LMS."
+                      and training partners who want more than &quot;just an
+                      LMS.&quot;
                     </p>
                   </div>
                 </div>
@@ -165,7 +166,7 @@ export default function Home() {
                   Built for Growth
                 </h3>
                 <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                  Whether you're an{" "}
+                  Whether you&apos;re an{" "}
                   <span className="font-bold text-gray-800">
                     educator shaping the classroom of tomorrow
                   </span>{" "}
