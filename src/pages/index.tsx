@@ -5,6 +5,15 @@ export default function Home() {
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
   return (
     <>
+      <style jsx>{`
+        @media (max-width: 1023px) {
+          .overlap-image {
+            position: static !important;
+            top: auto !important;
+            left: auto !important;
+          }
+        }
+      `}</style>
       <div className="bg-gray-100 min-h-screen">
         <main className="px-6 py-12">
           <section className="text-center mb-12">
@@ -14,9 +23,9 @@ export default function Home() {
             <h1 className="text-4xl font-bold text-gray-800 mb-6">
               Coming Soon 🕒
             </h1>
-            <div className="flex justify-center space-x-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-4 px-4">
               <button
-                className="bg-black text-white px-6 py-4 rounded-lg hover:bg-gray-800 transition w-56"
+                className="bg-black text-white px-6 py-4 rounded-lg hover:bg-gray-800 transition w-full sm:w-56"
                 onClick={() => setIsWaitlistOpen(true)}
               >
                 Join Waiting List
@@ -25,7 +34,7 @@ export default function Home() {
                 href="https://npda.notion.site/Nebula-Academy-Partner-Program-2696192e418f803dadd5e681407c1c1f?source=copy_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white px-6 py-4 rounded-lg w-56 font-semibold overflow-hidden group transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25 inline-flex items-center justify-center"
+                className="relative bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white px-6 py-4 rounded-lg w-full sm:w-56 font-semibold overflow-hidden group transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25 inline-flex items-center justify-center"
               >
                 <span className="relative z-10">Become a Partner</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -35,7 +44,7 @@ export default function Home() {
                 href="https://outlook.office365.com/owa/calendar/StellarLearnDemoRequest@nebulaacademy.org/bookings/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-indigo-700 text-white px-6 py-4 rounded-lg hover:bg-indigo-800 transition w-56 inline-flex items-center justify-center"
+                className="bg-indigo-700 text-white px-6 py-4 rounded-lg hover:bg-indigo-800 transition w-full sm:w-56 inline-flex items-center justify-center"
               >
                 Request a Demo
               </a>
@@ -46,13 +55,13 @@ export default function Home() {
             />
           </section>
 
-          <section className="mb-24 flex justify-center relative">
-            <div className="relative flex items-center justify-center py-16">
+          <section className="mb-8 sm:mb-24 flex justify-center relative">
+            <div className="relative flex flex-col lg:flex-row items-center justify-center py-8 sm:py-16 gap-4 sm:gap-8 lg:gap-0">
               <div className="relative hover:z-10 transition-all">
                 <img
                   src="/assets/admin-dashboard.png"
                   alt="Stellar-Learn LMS Screenshot 1"
-                  className="rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
+                  className="overlap-image rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
                   draggable="false"
                   style={{
                     position: "relative",
@@ -66,7 +75,7 @@ export default function Home() {
                 <img
                   src="/assets/user-dashboard.png"
                   alt="Stellar-Learn LMS Screenshot 2"
-                  className="rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
+                  className="overlap-image rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
                   draggable="false"
                   style={{
                     position: "relative",
@@ -80,7 +89,7 @@ export default function Home() {
           </section>
 
           {/* Stellar-Learn Content Section */}
-          <section className="bg-white py-20 px-6 my-16">
+          <section className="bg-white py-10 sm:py-20 px-6 my-8 sm:my-16">
             <div className="max-w-6xl mx-auto">
               {/* Header */}
               <div className="text-center mb-16">
@@ -181,13 +190,13 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="mb-24 flex justify-center relative">
-            <div className="relative flex items-center justify-center py-16">
+          <section className="mb-8 sm:mb-24 flex justify-center relative">
+            <div className="relative flex flex-col lg:flex-row items-center justify-center py-8 sm:py-16 gap-4 sm:gap-8 lg:gap-0">
               <div className="relative hover:z-20 transition-all z-20">
                 <img
                   src="/assets/Course.png"
                   alt="Stellar-Learn Course Screenshot"
-                  className="rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
+                  className="overlap-image rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
                   draggable="false"
                   style={{
                     position: "relative",
@@ -201,7 +210,7 @@ export default function Home() {
                 <img
                   src="/assets/Profile.png"
                   alt="Stellar-Learn Profile Screenshot"
-                  className="rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
+                  className="overlap-image rounded-lg shadow-lg w-full max-w-2xl transition-transform transform hover:scale-105"
                   draggable="false"
                   style={{
                     position: "relative",
@@ -214,15 +223,15 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="text-center ">
+          <section className="text-center mb-8 sm:mb-24">
             <h1 className="text-2xl font-bold text-gray-800">
               More exciting features and updates are coming soon. 🚀 Stay tuned!
             </h1>
           </section>
         </main>
-        <div className="flex justify-center space-x-4 pb-20">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 px-4 pb-10 sm:pb-20">
           <button
-            className="bg-black text-white px-6 py-4 rounded-lg hover:bg-gray-800 transition w-56"
+            className="bg-black text-white px-6 py-4 rounded-lg hover:bg-gray-800 transition w-full sm:w-56"
             onClick={() => setIsWaitlistOpen(true)}
           >
             Join Waiting List
@@ -231,7 +240,7 @@ export default function Home() {
             href="https://npda.notion.site/Nebula-Academy-Partner-Program-2696192e418f803dadd5e681407c1c1f?source=copy_link"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white px-6 py-4 rounded-lg w-56 font-semibold overflow-hidden group transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25 inline-flex items-center justify-center"
+            className="relative bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white px-6 py-4 rounded-lg w-full sm:w-56 font-semibold overflow-hidden group transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25 inline-flex items-center justify-center"
           >
             <span className="relative z-10">Become a Partner</span>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -241,7 +250,7 @@ export default function Home() {
             href="https://outlook.office365.com/owa/calendar/StellarLearnDemoRequest@nebulaacademy.org/bookings/"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-indigo-700 text-white px-6 py-4 rounded-lg hover:bg-indigo-800 transition w-56 inline-flex items-center justify-center"
+            className="bg-indigo-700 text-white px-6 py-4 rounded-lg hover:bg-indigo-800 transition w-full sm:w-56 inline-flex items-center justify-center"
           >
             Request a Demo
           </a>
